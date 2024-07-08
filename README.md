@@ -43,7 +43,7 @@ This project is a microservice developed with Node.js and Express that serves im
     docker run -p 8080:3000 -d --name container_name image_name
     ```
 
-3. Open your browser and navigate to http://localhost:3000 to view the frontend interface.
+3. Open your browser and navigate to http://localhost:8080 to view the frontend interface.
 
 ## Endpoints
 
