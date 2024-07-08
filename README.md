@@ -1,21 +1,21 @@
-# Microservicio para Servir Imágenes
+# Online CoffeeShop - Microservicio para Servir Imágenes 
 
 Integrantes: Jonathan Chasipanta
              Gonzalo Guachamin 
 
+![Imagen de la portada](/images/p1.jpg)
 Este proyecto es un microservicio desarrollado con Node.js y Express que sirve imágenes almacenadas en un directorio local y una interfaz frontend para visualizar las imágenes.
 
 ## Requisitos
 
-- Node.js
-- Docker
+- Node v20.13.1
+- Docker version 26.0.0 
 
 ## Instalación
 
 1. Clona este repositorio:
     ```bash
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    cd tu_repositorio
+    git clone https://github.com/JonathanP06511/P1M1-microservicioImagen.git
     ```
 
 2. Instala las dependencias:
@@ -27,6 +27,7 @@ Este proyecto es un microservicio desarrollado con Node.js y Express que sirve i
 
 1. Inicia el servidor:
     ```bash
+    npm start
     node server.js
     ```
 
@@ -36,12 +37,12 @@ Este proyecto es un microservicio desarrollado con Node.js y Express que sirve i
 
 1. Construye la imagen Docker:
     ```bash
-    docker build -t image-service .
+    docker build -t image-name .
     ```
 
 2. Inicia un contenedor con la imagen creada:
     ```bash
-    docker run -p 3000:3000 -v $(pwd)/frontend:/app/frontend -v $(pwd)/images:/app/images image-service
+    docker run -p 8080:3000 -d --name container_name image_name
     ```
 
 3. Abre tu navegador y navega a `http://localhost:3000` para ver la interfaz de frontend.
