@@ -1,57 +1,55 @@
-# Online CoffeeShop - Microservicio para Servir Imágenes 
-
-Integrantes: Jonathan Chasipanta
-             Gonzalo Guachamin 
-
+# Online CoffeeShop - Microservice for Serving Images
 ![Imagen de la portada](/images/p1.jpg)
-Este proyecto es un microservicio desarrollado con Node.js y Express que sirve imágenes almacenadas en un directorio local y una interfaz frontend para visualizar las imágenes.
 
-## Requisitos
+Members: Jonathan Chasipanta - Gonzalo Guachamin
+
+This project is a microservice developed with Node.js and Express that serves images stored in a local directory, along with a frontend interface for viewing the images.
+
+## Requirements
 
 - Node v20.13.1
 - Docker version 26.0.0 
 
-## Instalación
+## Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
     ```bash
     git clone https://github.com/JonathanP06511/P1M1-microservicioImagen.git
     ```
 
-2. Instala las dependencias:
+2. Install dependencies:
     ```bash
     npm install
     ```
 
-## Uso
+## Usage
 
-1. Inicia el servidor:
+1. Start the server:
     ```bash
     npm start
     node server.js
     ```
 
-2. Abre tu navegador y navega a `http://localhost:3000` para ver la interfaz de frontend.
+2. Open your browser and navigate to http://localhost:3000 to view the frontend interface.
+## Docker Usage
 
-## Uso con Docker
-
-1. Construye la imagen Docker:
+1. Build the Docker image:
     ```bash
     docker build -t image-name .
     ```
 
-2. Inicia un contenedor con la imagen creada:
+2. Run a container using the created image:
     ```bash
     docker run -p 8080:3000 -d --name container_name image_name
     ```
 
-3. Abre tu navegador y navega a `http://localhost:3000` para ver la interfaz de frontend.
+3. Open your browser and navigate to http://localhost:3000 to view the frontend interface.
 
 ## Endpoints
 
-- `GET /api/images`: Obtiene la lista de imágenes disponibles.
-- `GET /api/images/:imageName`: Sirve una imagen específica por nombre.
-- `GET /`: Carga el frontend.
+- `GET /api/images`: Retrieves the list of available images.
+- `GET /api/images/:imageName`: Serves a specific image by name.
+- `GET /`: Loads the frontend.
 
 
 
